@@ -1,7 +1,14 @@
+import { lazy, Suspense } from 'react'
 import { UserInput } from '../../features/user_input'
 import { FortuneResult } from '../../features/fortune_result'
 import { useFortuneAI, useFortuneState } from '../../shared/lib'
 import './Home.css'
+
+const CosmicBackground = lazy(() =>
+  import('../../shared/ui/CosmicBackground').then((module) => ({
+    default: module.CosmicBackground,
+  })),
+)
 
 function Home() {
   const {
@@ -37,6 +44,9 @@ function Home() {
 
   return (
     <main className="home">
+      <Suspense fallback={null}>
+        <CosmicBackground />
+      </Suspense>
       <div className="home__atmosphere" aria-hidden="true" />
 
       <header className="home__brand">

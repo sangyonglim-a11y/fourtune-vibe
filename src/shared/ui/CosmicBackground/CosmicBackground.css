@@ -1,0 +1,13 @@
+.cosmic-background {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.cosmic-background canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
