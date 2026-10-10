@@ -1,0 +1,32 @@
+.user-input {
+  display: grid;
+  gap: 0.85rem;
+  animation: user-input-rise 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: 120ms;
+}
+
+.user-input__label {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.user-input__actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.35rem;
+}
+
+@keyframes user-input-rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

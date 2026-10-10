@@ -1,0 +1,53 @@
+:root {
+  --void: #12081f;
+  --plum: #1c0f32;
+  --violet: #2a1648;
+  --violet-mist: #3d2466;
+  --accent: #d4af37;
+  --accent-strong: #f0d78c;
+  --accent-deep: #b8860b;
+  --ink: #f3e9d7;
+  --ink-soft: #c9b8a0;
+  --ink-muted: #8f7e96;
+  --ink-on-accent: #1a0f0a;
+  --line: rgba(212, 175, 55, 0.28);
+  --line-strong: rgba(212, 175, 55, 0.55);
+  --panel: rgba(28, 15, 50, 0.72);
+  --glow: rgba(212, 175, 55, 0.35);
+
+  --font-display: 'Cinzel', 'Gowun Batang', serif;
+  --font-body: 'Cormorant Garamond', 'Gowun Batang', serif;
+
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.55;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--ink);
+  background: var(--void);
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100svh;
+  background: var(--void);
+}
+
+#root {
+  min-height: 100svh;
+}
+
+button,
+textarea {
+  font: inherit;
+}
